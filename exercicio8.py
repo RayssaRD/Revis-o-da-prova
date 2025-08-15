@@ -1,6 +1,12 @@
-#Crie um programa que leia três números e imprima o maior entre eles.
-numeroum = int(input("Digite o primeiro número"))
-numerodois = int(input("Digite o segundo número"))
-numerotres = int(input("Digite o terceiro número"))
-maior = max(numeroum,numerodois, numerotres)
-print(f"O maior número é {maior}")
+'''Leia a distância em km e a quantidade de litros de gasolina consumidos por um carro em um percurso, calcule o consumo em km/l e escreva uma mensagem de acordo com a tabela abaixo: '''
+km = float(input("Digite quantos km vc percorre: "))
+gaso = float(input("Litros de gasolina "))
+
+if km < 8:
+    print("Venda o carro")
+
+elif km > 8 and km < 14:
+    print("Econômico")
+
+else: 
+    print("Super Econômico")
