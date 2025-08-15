@@ -1,11 +1,19 @@
-#Faça um programa que lê o salário de um trabalhador e o valor da prestação de um empréstimo, depois verifica se a prestação é maior que 20% do salário e imprime a mensagem: "Empréstimo não concedido", caso contrário, imprime: "Empréstimo concedido".
-salario = float(input("Olá, digite seu salário mensal: "))
-valor_emprestimo = float(input("Agora digite o valor que deseja pagar por mês na prestação do empréstimo: "))
+'''Escreva uma função que receba dois parâmetros: uma string e um caractere,
+ e conte quantas vezes esse caractere aparece na string.'''
 
-if valor_emprestimo <= 20/100 * salario:
-    print("Empréstimo Concedido!")
+def contagem(texto, caractere):
+  contador = 0
+  for c in texto: #c = caractere
+    if c == caractere:
+      contador+=1
+  return contador
 
-else:
-    print("Empréstimo não concedido!")
+texto = input("Digite uma string: ").lower()
+caractere = input("Digite o caractere que deseja contar: ").lower()
 
-    
+print(f"O caractere {caractere} aparece {contagem(texto,caractere)} vezes na string.")
+
+
+
+
+   
